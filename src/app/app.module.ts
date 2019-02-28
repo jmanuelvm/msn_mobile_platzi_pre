@@ -16,6 +16,7 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
+import {AuthService} from "../services/auth";
 export const firebaseConfig = {
   apiKey: "AIzaSyBL0lweVWdNmpRs1XWU9tWDxxzwxr9ns28",
   authDomain: "platzinger-beb6e.firebaseapp.com",
@@ -53,7 +54,8 @@ export const firebaseConfig = {
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserService
+    UserService,
+    AuthService
   ]
 })
 export class AppModule {}
