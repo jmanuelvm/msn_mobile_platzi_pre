@@ -35,7 +35,7 @@
     <ion-input type="text" [(ngModel)]="query" placeholder="Buscar..."></ion-input>
   </div>
 
-  <div>
+  <div *ngIf="users">
     <div>
       <b>Amigos</b>
     </div>
