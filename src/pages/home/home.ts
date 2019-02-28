@@ -12,13 +12,13 @@ import {Status, User} from "../../interfaces/user";
 export class HomePage {
   users: User[];
   query: string;
+  status = Status;
   yuliana: User = {
     name: 'Yuliana',
     age: 26,
     active: false,
     status: Status.Online
   };
-  status: Status;
   constructor(public navCtrl: NavController, public userService: UserService) {
     this.users = this.userService.get();
     this.userService.add(this.yuliana);
@@ -31,10 +31,9 @@ export class HomePage {
   goToConversation(user) {
     this.navCtrl.push(ConversationPage, {data: user});
   }
-
-  getIconByStatus(status){
+  getIconByStatus(status) {
     let icon = '';
-    switch (status) {
+    switch (status){
       case Status.Online:
         icon = 'logo_live_online.png';
         break;
@@ -53,5 +52,4 @@ export class HomePage {
     }
     return icon;
   }
-
 }
