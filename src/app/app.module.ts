@@ -18,12 +18,12 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {AuthService} from "../services/auth";
 export const firebaseConfig = {
-  apiKey: 'AIzaSyB1WZRwZRHy9L6jwgqYgOlTvf7yPCC33hQ',
-  authDomain: 'msnalive2.firebaseapp.com',
-  databaseURL: 'https://msnalive2.firebaseio.com',
-  projectId: 'msnalive2',
-  storageBucket: 'msnalive2.appspot.com',
-  messagingSenderId: '18390215590'
+  apiKey: "AIzaSyBL0lweVWdNmpRs1XWU9tWDxxzwxr9ns28",
+  authDomain: "platzinger-beb6e.firebaseapp.com",
+  databaseURL: "https://platzinger-beb6e.firebaseio.com",
+  projectId: "platzinger-beb6e",
+  storageBucket: "platzinger-beb6e.appspot.com",
+  messagingSenderId: "679712693159"
 };
 @NgModule({
   declarations: [
